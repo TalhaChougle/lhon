@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1565c0" />
+  <title>Leo Hands of Nurture — Clearer Vision, Brighter Future</title>
+  <meta name="description" content="Leo Hands of Nurture is a youth-led nonprofit in Makassar, South Sulawesi, Indonesia — affiliated with the Leo Club ecosystem. Education, health advocacy, and community development." />
+  <meta property="og:title" content="Leo Hands of Nurture — Clearer Vision, Brighter Future" />
+  <meta property="og:description" content="Youth-led. Volunteer-driven. Real change in Makassar, Indonesia." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== INTRO SCREEN ===================== -->
+  <div id="intro-screen" aria-hidden="true" role="presentation">
+    <button id="intro-skip" aria-label="Skip intro">Skip</button>
+    <div class="intro-bg"></div>
+    <div class="intro-content">
+      <div class="intro-logo-mark">
+        <img
+          src="assets/logo.png"
+          alt="Leo Club Makassar — Hands of Nurture official logo"
+          class="intro-logo-img"
+        />
+        <div class="intro-stars" aria-hidden="true">
+          <span class="intro-star s1">✦</span>
+          <span class="intro-star s2">✦</span>
+          <span class="intro-star s3">✧</span>
+          <span class="intro-star s4">✦</span>
+        </div>
+      </div>
+      <div class="intro-tagline">
+        <span>SEE CLEARLY.</span>
+        <span>LIVE FULLY.</span>
+        <span>DREAM BIGGER.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header id="site-header" role="banner">
+    <nav class="nav-inner" aria-label="Primary navigation">
+      <a href="#hero" class="nav-logo" aria-label="Leo Hands of Nurture — home">
+        <img
+          src="assets/logo.png"
+          alt="Leo Hands of Nurture logo"
+          class="nav-logo-img"
+        />
+        <span class="nav-logo-text">LEO HANDS<br/>OF NURTURE</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#what-we-do">What We Do</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#stories">Stories</a></li>
+        <li><a href="#get-involved">Get Involved</a></li>
+      </ul>
+      <a href="#collaborate" class="nav-cta btn-primary">JOIN US →</a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===================== MOBILE MENU ===================== -->
+  <div id="mobile-menu" class="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <div class="mobile-menu-header">
+      <a href="#hero" class="nav-logo" aria-label="Home">
+        <img
+          src="assets/logo.png"
+          alt="Leo Hands of Nurture logo"
+          class="nav-logo-img"
+        />
+        <span class="nav-logo-text">LEO HANDS OF NURTURE</span>
+      </a>
+      <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close navigation menu">✕</button>
+    </div>
+    <ul class="mobile-nav-links" role="list">
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#what-we-do" class="mobile-nav-link">What We Do</a></li>
+      <li><a href="#impact" class="mobile-nav-link">Impact</a></li>
+      <li><a href="#stories" class="mobile-nav-link">Stories</a></li>
+      <li><a href="#get-involved" class="mobile-nav-link">Get Involved</a></li>
+    </ul>
+    <div class="mobile-menu-footer">
+      <a href="#collaborate" class="btn-primary mobile-cta">JOIN US →</a>
+      <p class="mobile-location">Makassar, South Sulawesi, Indonesia</p>
+    </div>
+  </div>
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay" hidden></div>
+
+  <main id="main-content">
+
+    <!-- ===================== HERO ===================== -->
+    <section id="hero" class="section-hero" aria-label="Hero — Clearer Vision, Brighter Future">
+      <div class="hero-bg-shapes" aria-hidden="true">
+        <div class="hero-shape shape-1"></div>
+        <div class="hero-shape shape-2"></div>
+        <div class="hero-shape shape-3"></div>
+      </div>
+
+      <div class="hero-grid">
+        <!-- LEFT: Editorial typography -->
+        <div class="hero-left">
+          <div class="hero-label" aria-hidden="true">
+            <span class="label-dot"></span>
+            <span>MAKASSAR · INDONESIA · 2026</span>
+          </div>
+          <h1 class="hero-headline display-headline" id="hero-headline">
+            <span class="hero-line hl-1" id="hero-line-1">CLEARER</span>
+            <span class="hero-line hl-2" id="hero-line-2">VISION,</span>
+            <span class="hero-line hl-3" id="hero-line-3">BRIGHTER</span>
+            <span class="hero-line hl-4" id="hero-line-4">FUTURE</span>
+          </h1>
+          <p class="hero-sub" id="hero-sub">Together, we create change.</p>
+          <div class="hero-ctas">
+            <a href="#impact" class="btn-primary">SEE OUR IMPACT →</a>
+            <a href="#what-we-do" class="btn-outline">EXPLORE OUR WORK</a>
+          </div>
+        </div>
+
+        <!-- CENTER: Photography composition -->
+        <div class="hero-center" aria-hidden="true">
+          <div class="hero-photo-frame main-photo" data-parallax="0.03">
+            <div class="photo-inner">
+              <img
+                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=700&q=85"
+                alt="Youth volunteers smiling together at a community event"
+                loading="eager"
+              />
+            </div>
+            <div class="photo-label">YOUTH ACTION</div>
+          </div>
+          <div class="hero-photo-frame float-photo fp-1" data-parallax="0.06">
+            <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=400&q=80" alt="Volunteers helping community members" loading="lazy" />
+          </div>
+          <div class="hero-photo-frame float-photo fp-2" data-parallax="0.04">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&q=80" alt="Children in an educational activity" loading="lazy" />
+          </div>
+          <div class="hero-photo-frame float-photo fp-3" data-parallax="0.08">
+            <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&q=80" alt="Community outreach event" loading="lazy" />
+          </div>
+          <div class="hero-sparkles" aria-hidden="true">
+            <span class="sparkle sp-1">✦</span>
+            <span class="sparkle sp-2">✧</span>
+            <span class="sparkle sp-3">✦</span>
+            <span class="sparkle sp-4">✧</span>
+            <span class="sparkle sp-5">✦</span>
+          </div>
+          <div class="hero-line-deco hero-line-v" aria-hidden="true"></div>
+          <div class="hero-line-deco hero-line-h" aria-hidden="true"></div>
+        </div>
+
+        <!-- RIGHT: Campaign identity strip -->
+        <div class="hero-right" aria-hidden="true">
+          <div class="hero-tagline-vert">
+            <span>SEE CLEARLY.</span>
+            <span>LIVE FULLY.</span>
+            <span>DREAM BIGGER.</span>
+          </div>
+          <div class="hero-stat-pill">
+            <span class="stat-big">877</span>
+            <span class="stat-label">lives<br/>touched</span>
+          </div>
+          <div class="hero-badge">
+            <span>YOUTH-LED</span>
+            <span>VOLUNTEER-DRIVEN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <span class="scroll-text">SCROLL</span>
+        <span class="scroll-arrow">↓</span>
+      </div>
+    </section>
+
+    <!-- ===================== MARQUEE 1 ===================== -->
+    <div class="marquee-strip marquee-dark" aria-hidden="true" role="presentation">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span>SEE CLEARLY</span><span class="marquee-dot">•</span>
+          <span>LIVE FULLY</span><span class="marquee-dot">•</span>
+          <span>DREAM BIGGER</span><span class="marquee-dot">•</span>
+          <span>HELPING THE COMMUNITY</span><span class="marquee-dot">•</span>
+          <span>YOUTH-LED ACTION</span><span class="marquee-dot">•</span>
+          <span>SEE CLEARLY</span><span class="marquee-dot">•</span>
+          <span>LIVE FULLY</span><span class="marquee-dot">•</span>
+          <span>DREAM BIGGER</span><span class="marquee-dot">•</span>
+          <span>HELPING THE COMMUNITY</span><span class="marquee-dot">•</span>
+          <span>YOUTH-LED ACTION</span><span class="marquee-dot">•</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span>SEE CLEARLY</span><span class="marquee-dot">•</span>
+          <span>LIVE FULLY</span><span class="marquee-dot">•</span>
+          <span>DREAM BIGGER</span><span class="marquee-dot">•</span>
+          <span>HELPING THE COMMUNITY</span><span class="marquee-dot">•</span>
+          <span>YOUTH-LED ACTION</span><span class="marquee-dot">•</span>
+          <span>SEE CLEARLY</span><span class="marquee-dot">•</span>
+          <span>LIVE FULLY</span><span class="marquee-dot">•</span>
+          <span>DREAM BIGGER</span><span class="marquee-dot">•</span>
+          <span>HELPING THE COMMUNITY</span><span class="marquee-dot">•</span>
+          <span>YOUTH-LED ACTION</span><span class="marquee-dot">•</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section-about" aria-labelledby="about-heading">
+      <div class="about-grid">
+        <div class="about-text-col">
+          <div class="section-label">ABOUT US</div>
+          <h2 id="about-heading" class="display-headline about-headline">
+            <span>YOUNG HANDS.</span>
+            <span>BIG HEARTS.</span>
+            <span>REAL CHANGE.</span>
+          </h2>
+          <div class="about-body">
+            <p>Leo Hands of Nurture is a youth-led, volunteer-driven initiative operating under the Leo Club ecosystem — affiliated with Lions International and proudly rooted in Makassar, South Sulawesi, Indonesia.</p>
+            <p>We are young people who believe that compassion, action, and community can change lives. Our volunteers drive programs in English literacy, healthcare advocacy, and community support — giving our neighbors access to care and opportunity they deserve.</p>
+          </div>
+          <div class="about-tags">
+            <span class="tag">Youth-Led</span>
+            <span class="tag">Volunteer-Driven</span>
+            <span class="tag">Leo Club Affiliated</span>
+            <span class="tag">Makassar, Indonesia</span>
+          </div>
+        </div>
+        <div class="about-visual-col" aria-hidden="true">
+          <div class="about-photo-stack">
+            <div class="about-photo ap-main">
+              <img
+                src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=700&q=85"
+                alt="Youth volunteers working together at a community event in Makassar"
+                loading="lazy"
+              />
+            </div>
+            <div class="about-photo ap-small">
+              <img
+                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500&q=80"
+                alt="Leo Hands of Nurture volunteers smiling with community members"
+                loading="lazy"
+              />
+            </div>
+            <div class="about-deco-line"></div>
+            <div class="about-sparkle">✦</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MARQUEE 2 ===================== -->
+    <div class="marquee-strip marquee-cyan" aria-hidden="true" role="presentation">
+      <div class="marquee-track marquee-right">
+        <div class="marquee-content">
+          <span class="marquee-outlined">EDUCATION</span><span class="marquee-dot">•</span>
+          <span class="marquee-outlined">HEALTH</span><span class="marquee-dot">•</span>
+          <span class="marquee-outlined">COMMUNITY</span><span class="marquee-dot">•</span>
+          <span class="marquee-outlined">VOLUNTEERING</span><span class="marquee-dot">•</span>
+          <span class="marquee-outlined">YOUTH-LED ACTION</span><span class="marquee-dot">•</span>
+          <span class="marquee-outlined">EDUCATION</span><span class="marquee-dot">•</span>
+          <span class="marquee-outlined">HEALTH</span><span class="marquee-dot">•</span>
+          <span class="marquee-outlined">COMMUNITY</span><span class="marquee-dot">•</span>
+          <span class="marquee-outlined">VOLUNTEERING</span><span class="marquee-dot">•</span>
+          <span class="marquee-outlined">YOUTH-LED ACTION</span><span class="marquee-dot">•</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span class="marquee-outlined">EDUCATION</span><span class="marquee-dot">•</span>
+          <span class="marquee-outlined">HEALTH</span><span class="marquee-dot">•</span>
+          <span class="marquee-outlined">COMMUNITY</span><span class="marquee-dot">•</span>
+          <span class="marquee-outlined">VOLUNTEERING</span><span class="marquee-dot">•</span>
+          <span class="marquee-outlined">YOUTH-LED ACTION</span><span class="marquee-dot">•</span>
+          <span class="marquee-outlined">EDUCATION</span><span class="marquee-dot">•</span>
+          <span class="marquee-outlined">HEALTH</span><span class="marquee-dot">•</span>
+          <span class="marquee-outlined">COMMUNITY</span><span class="marquee-dot">•</span>
+          <span class="marquee-outlined">VOLUNTEERING</span><span class="marquee-dot">•</span>
+          <span class="marquee-outlined">YOUTH-LED ACTION</span><span class="marquee-dot">•</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== WHAT WE DO ===================== -->
+    <section id="what-we-do" class="section-what-we-do" aria-labelledby="wwd-heading">
+      <div class="wwd-header">
+        <div class="section-label">OUR WORK</div>
+        <h2 id="wwd-heading" class="display-headline">WHAT WE DO</h2>
+        <p class="wwd-intro">Four pillars. One mission. Endless impact.</p>
+      </div>
+      <div class="wwd-grid">
+        <article class="wwd-card wwd-card-large" tabindex="0">
+          <div class="wwd-card-number" aria-hidden="true">01</div>
+          <div class="wwd-card-image">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=700&q=85" alt="Children learning English together in a bright classroom" loading="lazy" />
+          </div>
+          <div class="wwd-card-content">
+            <h3 class="wwd-card-title">ENGLISH LITERACY<br/>&amp; EDUCATION</h3>
+            <p>Giving children in underserved communities, local schools and orphanages opportunities to learn and develop English — opening doors to a bigger world.</p>
+            <span class="wwd-arrow" aria-hidden="true">→</span>
+          </div>
+        </article>
+        <article class="wwd-card" tabindex="0">
+          <div class="wwd-card-number" aria-hidden="true">02</div>
+          <div class="wwd-card-image">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=85" alt="Healthcare volunteers providing eye examinations to community members" loading="lazy" />
+          </div>
+          <div class="wwd-card-content">
+            <h3 class="wwd-card-title">HEALTHCARE<br/>ADVOCACY</h3>
+            <p>Coordinating events and digital campaigns on health challenges including diabetes awareness and support for children facing childhood cancer.</p>
+            <span class="wwd-arrow" aria-hidden="true">→</span>
+          </div>
+        </article>
+        <article class="wwd-card" tabindex="0">
+          <div class="wwd-card-number" aria-hidden="true">03</div>
+          <div class="wwd-card-image">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=85" alt="Volunteers visiting and supporting children at a local orphanage" loading="lazy" />
+          </div>
+          <div class="wwd-card-content">
+            <h3 class="wwd-card-title">COMMUNITY &amp;<br/>ORPHANAGE SUPPORT</h3>
+            <p>Organizing donation drives, holiday programs and hands-on volunteering activities supporting local orphanages and communities across Makassar.</p>
+            <span class="wwd-arrow" aria-hidden="true">→</span>
+          </div>
+        </article>
+        <article class="wwd-card" tabindex="0">
+          <div class="wwd-card-number" aria-hidden="true">04</div>
+          <div class="wwd-card-image">
+            <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=85" alt="Young volunteers planning and collaborating on a community program" loading="lazy" />
+          </div>
+          <div class="wwd-card-content">
+            <h3 class="wwd-card-title">YOUTH-LED<br/>ACTION</h3>
+            <p>Young volunteers working together to turn ideas into practical community programs — because change is most powerful when it starts from within.</p>
+            <span class="wwd-arrow" aria-hidden="true">→</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== INITIATIVES ===================== -->
+    <section id="initiatives" class="section-initiatives" aria-labelledby="initiatives-heading">
+      <div class="initiatives-header">
+        <div class="section-label">EXPLORE</div>
+        <h2 id="initiatives-heading" class="display-headline">OUR INITIATIVES</h2>
+      </div>
+
+      <!-- Desktop split layout -->
+      <div class="initiatives-split" id="initiatives-split">
+        <nav class="initiatives-nav" aria-label="Initiatives navigation" role="tablist">
+          <button class="init-tab active" role="tab" aria-selected="true" aria-controls="init-panel-education" id="tab-education">
+            <span class="init-tab-num">01</span>
+            <div class="init-tab-text">
+              <span class="init-tab-cat">EDUCATION</span>
+              <span class="init-tab-name">English Literacy Program</span>
+            </div>
+            <span class="init-tab-arrow" aria-hidden="true">→</span>
+          </button>
+          <button class="init-tab" role="tab" aria-selected="false" aria-controls="init-panel-health" id="tab-health">
+            <span class="init-tab-num">02</span>
+            <div class="init-tab-text">
+              <span class="init-tab-cat">HEALTH</span>
+              <span class="init-tab-name">Healthcare Campaigns</span>
+            </div>
+            <span class="init-tab-arrow" aria-hidden="true">→</span>
+          </button>
+          <button class="init-tab" role="tab" aria-selected="false" aria-controls="init-panel-community" id="tab-community">
+            <span class="init-tab-num">03</span>
+            <div class="init-tab-text">
+              <span class="init-tab-cat">COMMUNITY</span>
+              <span class="init-tab-name">Orphanage &amp; Outreach</span>
+            </div>
+            <span class="init-tab-arrow" aria-hidden="true">→</span>
+          </button>
+          <button class="init-tab" role="tab" aria-selected="false" aria-controls="init-panel-volunteer" id="tab-volunteer">
+            <span class="init-tab-num">04</span>
+            <div class="init-tab-text">
+              <span class="init-tab-cat">VOLUNTEER</span>
+              <span class="init-tab-name">Youth Action Programs</span>
+            </div>
+            <span class="init-tab-arrow" aria-hidden="true">→</span>
+          </button>
+        </nav>
+
+        <div class="initiatives-content-pane">
+          <div class="init-panel active" id="init-panel-education" role="tabpanel" aria-labelledby="tab-education">
+            <div class="init-panel-image">
+              <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=85" alt="Children engaging in an English literacy session" loading="lazy" />
+              <div class="init-panel-badge">EDUCATION</div>
+            </div>
+            <div class="init-panel-body">
+              <h3 class="init-panel-title">English Literacy &amp; Education</h3>
+              <p>We bring English language learning directly to children in underserved schools, orphanages, and community centers across Makassar. Our volunteers lead structured sessions that build communication skills, confidence, and a foundation for future opportunity.</p>
+              <div class="init-panel-stat">
+                <span class="init-stat-num">Schools &amp; Orphanages</span>
+                <span class="init-stat-label">Reached in Makassar</span>
+              </div>
+              <a href="#collaborate" class="btn-outline-light">GET INVOLVED →</a>
+            </div>
+          </div>
+
+          <div class="init-panel" id="init-panel-health" role="tabpanel" aria-labelledby="tab-health" hidden>
+            <div class="init-panel-image">
+              <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=85" alt="Free eye examination at the Clearer Vision community event" loading="lazy" />
+              <div class="init-panel-badge">HEALTH</div>
+            </div>
+            <div class="init-panel-body">
+              <h3 class="init-panel-title">Healthcare Advocacy</h3>
+              <p>From eye care camps to diabetes awareness to childhood cancer support — we coordinate community health events and digital campaigns that make essential healthcare more accessible. Our most recent initiative reached 877 people with free eye examinations and prescription glasses.</p>
+              <div class="init-panel-stat">
+                <span class="init-stat-num">877</span>
+                <span class="init-stat-label">Participants Reached in 2026</span>
+              </div>
+              <a href="#impact" class="btn-outline-light">SEE OUR IMPACT →</a>
+            </div>
+          </div>
+
+          <div class="init-panel" id="init-panel-community" role="tabpanel" aria-labelledby="tab-community" hidden>
+            <div class="init-panel-image">
+              <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=85" alt="Volunteers spending time with children at a Makassar orphanage" loading="lazy" />
+              <div class="init-panel-badge">COMMUNITY</div>
+            </div>
+            <div class="init-panel-body">
+              <h3 class="init-panel-title">Community &amp; Orphanage Support</h3>
+              <p>Through donation drives, holiday programs, and hands-on volunteering, we support local orphanages and communities in Makassar. Every visit, every donation, every shared meal — it all counts.</p>
+              <div class="init-panel-stat">
+                <span class="init-stat-num">Multiple</span>
+                <span class="init-stat-label">Orphanages Supported</span>
+              </div>
+              <a href="#collaborate" class="btn-outline-light">JOIN A PROGRAM →</a>
+            </div>
+          </div>
+
+          <div class="init-panel" id="init-panel-volunteer" role="tabpanel" aria-labelledby="tab-volunteer" hidden>
+            <div class="init-panel-image">
+              <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=85" alt="Young Leo Club volunteers planning a community program together" loading="lazy" />
+              <div class="init-panel-badge">VOLUNTEER</div>
+            </div>
+            <div class="init-panel-body">
+              <h3 class="init-panel-title">Youth-Led Action</h3>
+              <p>Every program we run is designed and delivered by young volunteers. We believe youth are not just the future — we are the present. Join us to turn your compassion into community impact.</p>
+              <div class="init-panel-stat">
+                <span class="init-stat-num">100%</span>
+                <span class="init-stat-label">Youth Volunteer-Driven</span>
+              </div>
+              <a href="#collaborate" class="btn-outline-light">BECOME A VOLUNTEER →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile accordion -->
+      <div class="initiatives-accordion" id="initiatives-accordion">
+        <div class="acc-item">
+          <button class="acc-header" aria-expanded="true" aria-controls="acc-body-education">
+            <span class="acc-num">01</span>
+            <div class="acc-title-group">
+              <span class="acc-cat">EDUCATION</span>
+              <span class="acc-name">English Literacy Program</span>
+            </div>
+            <span class="acc-chevron" aria-hidden="true">↓</span>
+          </button>
+          <div class="acc-body" id="acc-body-education">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80" alt="Children in an English literacy session" loading="lazy" class="acc-image" />
+            <p>We bring English language learning directly to children in underserved schools, orphanages, and community centers across Makassar.</p>
+            <a href="#collaborate" class="btn-outline-light">GET INVOLVED →</a>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-header" aria-expanded="false" aria-controls="acc-body-health">
+            <span class="acc-num">02</span>
+            <div class="acc-title-group">
+              <span class="acc-cat">HEALTH</span>
+              <span class="acc-name">Healthcare Campaigns</span>
+            </div>
+            <span class="acc-chevron" aria-hidden="true">↓</span>
+          </button>
+          <div class="acc-body" id="acc-body-health" hidden>
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80" alt="Free eye care examination" loading="lazy" class="acc-image" />
+            <p>From eye care camps to diabetes awareness — making essential healthcare more accessible. Our 2026 initiative reached 877 people.</p>
+            <a href="#impact" class="btn-outline-light">SEE OUR IMPACT →</a>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-header" aria-expanded="false" aria-controls="acc-body-community">
+            <span class="acc-num">03</span>
+            <div class="acc-title-group">
+              <span class="acc-cat">COMMUNITY</span>
+              <span class="acc-name">Orphanage &amp; Outreach</span>
+            </div>
+            <span class="acc-chevron" aria-hidden="true">↓</span>
+          </button>
+          <div class="acc-body" id="acc-body-community" hidden>
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80" alt="Volunteers with children at an orphanage" loading="lazy" class="acc-image" />
+            <p>Donation drives, holiday programs, and hands-on volunteering supporting local orphanages and communities.</p>
+            <a href="#collaborate" class="btn-outline-light">JOIN A PROGRAM →</a>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-header" aria-expanded="false" aria-controls="acc-body-volunteer">
+            <span class="acc-num">04</span>
+            <div class="acc-title-group">
+              <span class="acc-cat">VOLUNTEER</span>
+              <span class="acc-name">Youth Action Programs</span>
+            </div>
+            <span class="acc-chevron" aria-hidden="true">↓</span>
+          </button>
+          <div class="acc-body" id="acc-body-volunteer" hidden>
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80" alt="Young volunteers working together" loading="lazy" class="acc-image" />
+            <p>Every program we run is designed and delivered by young volunteers. Join us to turn compassion into community impact.</p>
+            <a href="#collaborate" class="btn-outline-light">BECOME A VOLUNTEER →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CAMPAIGN STORY ===================== -->
+    <section id="campaign-story" class="section-campaign-story" aria-labelledby="story-heading">
+      <div class="story-bg-deco" aria-hidden="true">
+        <span class="story-star ss1">✦</span>
+        <span class="story-star ss2">✧</span>
+        <span class="story-star ss3">✦</span>
+      </div>
+      <div class="story-grid">
+        <div class="story-date-col">
+          <div class="story-date-card">
+            <span class="story-day">28</span>
+            <span class="story-month">JUNE</span>
+            <span class="story-year">2026</span>
+          </div>
+          <div class="story-location-pill">
+            <span aria-hidden="true">📍</span>
+            <span>MALL PIPO — ATRIUM BIRA</span>
+          </div>
+        </div>
+
+        <div class="story-main-col">
+          <div class="section-label">WHAT HAPPENED?</div>
+          <h2 id="story-heading" class="display-headline story-headline">
+            <span>CLEARER</span>
+            <span>VISION</span>
+            <span class="story-hl-accent">BRIGHTER</span>
+            <span>FUTURES</span>
+          </h2>
+          <div class="story-campaign-tags" aria-hidden="true">
+            <span class="story-tag">FREE EYE EXAMS</span>
+            <span class="story-tag-plus">+</span>
+            <span class="story-tag">PRESCRIPTION GLASSES</span>
+          </div>
+          <p class="story-purpose">TO MAKE ESSENTIAL EYE CARE MORE ACCESSIBLE TO THE COMMUNITY.</p>
+          <div class="story-body">
+            <p>On 28 June 2026, Leo Hands of Nurture brought free eye care directly to the community at Mall Pipo — Atrium Bira, Makassar. The event was designed to improve students' learning quality through better vision, ensuring no child had to struggle in class because of an uncorrected eyesight issue.</p>
+            <p>The initiative was supported by healthcare professionals from multiple institutions — bringing expertise and compassion together in one space.</p>
+          </div>
+          <div class="story-supporters">
+            <div class="supporter-item"><span aria-hidden="true">🏥</span><span>RS Primaya &amp; EyeQ Medical Teams</span></div>
+            <div class="supporter-item"><span aria-hidden="true">👨‍⚕️</span><span>13 PERDAMI Doctors</span></div>
+            <div class="supporter-item"><span aria-hidden="true">🩺</span><span>25 IROPIN Healthcare Workers</span></div>
+            <div class="supporter-item"><span aria-hidden="true">🦁</span><span>16 Lions Club Makassar Pinisi Members</span></div>
+          </div>
+        </div>
+
+        <div class="story-photo-col" aria-hidden="true">
+          <div class="story-photo sp-top">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=85" alt="A person receiving a free eye examination" loading="lazy" />
+          </div>
+          <div class="story-photo sp-bottom">
+            <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?w=500&q=80" alt="Medical staff at the eye care initiative" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== IMPACT ===================== -->
+    <section id="impact" class="section-impact" aria-labelledby="impact-heading">
+      <div class="impact-bg" aria-hidden="true">
+        <div class="impact-circle ic1"></div>
+        <div class="impact-circle ic2"></div>
+      </div>
+      <div class="impact-header">
+        <div class="section-label on-dark">CLEARER VISION, BRIGHTER FUTURES</div>
+        <h2 id="impact-heading" class="display-headline impact-heading-text">THE NUMBERS<br/>BEHIND THE CHANGE.</h2>
+        <p class="impact-event-info">28 June 2026 — Mall Pipo, Atrium Bira, Makassar</p>
+      </div>
+
+      <!-- Hero stat: number and label in a strict flex column — no overlap -->
+      <div class="impact-hero-stat">
+        <span class="impact-big-num" data-target="877" data-counted="false" aria-label="877">877</span>
+        <span class="impact-big-label">PARTICIPANTS REACHED</span>
+      </div>
+
+      <div class="impact-stats-grid">
+        <div class="impact-stat-card">
+          <span class="impact-stat-num" data-target="570" data-counted="false" aria-label="570">570</span>
+          <span class="impact-stat-label">PEOPLE RECEIVED FREE GLASSES</span>
+        </div>
+        <div class="impact-stat-card">
+          <span class="impact-stat-num" data-target="307" data-counted="false" aria-label="307">307</span>
+          <span class="impact-stat-label">DID NOT REQUIRE GLASSES</span>
+        </div>
+        <div class="impact-stat-card">
+          <span class="impact-stat-num" data-target="16" data-counted="false" aria-label="16">16</span>
+          <span class="impact-stat-label">LIONS CLUB MAKASSAR PINISI MEMBERS</span>
+        </div>
+        <div class="impact-stat-card">
+          <span class="impact-stat-num" data-target="25" data-counted="false" aria-label="25">25</span>
+          <span class="impact-stat-label">IROPIN HEALTHCARE WORKERS</span>
+        </div>
+        <div class="impact-stat-card">
+          <span class="impact-stat-num" data-target="13" data-counted="false" aria-label="13">13</span>
+          <span class="impact-stat-label">PERDAMI DOCTORS</span>
+        </div>
+      </div>
+
+      <div class="impact-cta-row">
+        <a href="#collaborate" class="btn-primary-light">JOIN THE NEXT INITIATIVE →</a>
+      </div>
+    </section>
+
+    <!-- ===================== MARQUEE 3 ===================== -->
+    <div class="marquee-strip marquee-light" aria-hidden="true" role="presentation">
+      <div class="marquee-track">
+        <div class="marquee-content marquee-large">
+          <span>CLEARER VISION</span><span class="marquee-dot">•</span>
+          <span>BRIGHTER FUTURE</span><span class="marquee-dot">•</span>
+          <span>TOGETHER WE CREATE CHANGE</span><span class="marquee-dot">•</span>
+          <span>CLEARER VISION</span><span class="marquee-dot">•</span>
+          <span>BRIGHTER FUTURE</span><span class="marquee-dot">•</span>
+          <span>TOGETHER WE CREATE CHANGE</span><span class="marquee-dot">•</span>
+        </div>
+        <div class="marquee-content marquee-large" aria-hidden="true">
+          <span>CLEARER VISION</span><span class="marquee-dot">•</span>
+          <span>BRIGHTER FUTURE</span><span class="marquee-dot">•</span>
+          <span>TOGETHER WE CREATE CHANGE</span><span class="marquee-dot">•</span>
+          <span>CLEARER VISION</span><span class="marquee-dot">•</span>
+          <span>BRIGHTER FUTURE</span><span class="marquee-dot">•</span>
+          <span>TOGETHER WE CREATE CHANGE</span><span class="marquee-dot">•</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== TODAY / ACTIVITY WALL ===================== -->
+    <section id="today" class="section-today" aria-labelledby="today-heading">
+      <div class="today-header">
+        <div class="section-label">ACTIVITIES</div>
+        <h2 id="today-heading" class="display-headline">TODAY</h2>
+        <p class="today-sub">EVERY ACTION STARTS WITH TODAY.</p>
+      </div>
+      <div class="today-filters" role="group" aria-label="Filter activities by category">
+        <button class="filter-btn active" data-filter="all" aria-pressed="true">ALL</button>
+        <button class="filter-btn" data-filter="education" aria-pressed="false">EDUCATION</button>
+        <button class="filter-btn" data-filter="health" aria-pressed="false">HEALTH</button>
+        <button class="filter-btn" data-filter="community" aria-pressed="false">COMMUNITY</button>
+        <button class="filter-btn" data-filter="volunteering" aria-pressed="false">VOLUNTEERING</button>
+      </div>
+      <div class="today-grid" id="today-grid" role="list">
+        <div class="today-card" data-category="health" role="listitem" tabindex="0">
+          <div class="today-card-image">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80" alt="Free eye examination for community participants" loading="lazy" />
+            <span class="today-card-cat">HEALTH</span>
+          </div>
+          <div class="today-card-body">
+            <span class="today-card-date">28 June 2026</span>
+            <h3 class="today-card-title">Clearer Vision, Brighter Futures</h3>
+            <p>Free eye exams and prescription glasses for 877 community members at Mall Pipo, Makassar.</p>
+          </div>
+        </div>
+        <div class="today-card" data-category="education" role="listitem" tabindex="0">
+          <div class="today-card-image">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80" alt="Children in an English literacy session" loading="lazy" />
+            <span class="today-card-cat">EDUCATION</span>
+          </div>
+          <div class="today-card-body">
+            <span class="today-card-date">Ongoing Program</span>
+            <h3 class="today-card-title">English Literacy Sessions</h3>
+            <p>Regular English learning sessions for children in underserved schools and orphanages in Makassar.</p>
+          </div>
+        </div>
+        <div class="today-card" data-category="community" role="listitem" tabindex="0">
+          <div class="today-card-image">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80" alt="Volunteers spending time with children at an orphanage" loading="lazy" />
+            <span class="today-card-cat">COMMUNITY</span>
+          </div>
+          <div class="today-card-body">
+            <span class="today-card-date">Ongoing Program</span>
+            <h3 class="today-card-title">Orphanage Support &amp; Visits</h3>
+            <p>Regular visits, donations and activities bringing joy and support to local orphanages.</p>
+          </div>
+        </div>
+        <div class="today-card" data-category="health" role="listitem" tabindex="0">
+          <div class="today-card-image">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&q=80" alt="Healthcare awareness campaign with community members" loading="lazy" />
+            <span class="today-card-cat">HEALTH</span>
+          </div>
+          <div class="today-card-body">
+            <span class="today-card-date">Ongoing Campaign</span>
+            <h3 class="today-card-title">Diabetes Awareness Campaign</h3>
+            <p>Digital and community campaigns raising awareness about diabetes prevention and management.</p>
+          </div>
+        </div>
+        <div class="today-card" data-category="volunteering" role="listitem" tabindex="0">
+          <div class="today-card-image">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80" alt="Youth volunteers gathering for a community action day" loading="lazy" />
+            <span class="today-card-cat">VOLUNTEERING</span>
+          </div>
+          <div class="today-card-body">
+            <span class="today-card-date">Recurring</span>
+            <h3 class="today-card-title">Youth Volunteer Days</h3>
+            <p>Young volunteers coming together to plan, prepare and deliver community programs across Makassar.</p>
+          </div>
+        </div>
+        <div class="today-card" data-category="community" role="listitem" tabindex="0">
+          <div class="today-card-image">
+            <img src="https://images.unsplash.com/photo-1607748862156-7c548e7e98f4?w=600&q=80" alt="Donation drive collecting goods for families in need" loading="lazy" />
+            <span class="today-card-cat">COMMUNITY</span>
+          </div>
+          <div class="today-card-body">
+            <span class="today-card-date">Seasonal Program</span>
+            <h3 class="today-card-title">Donation &amp; Giveback Drives</h3>
+            <p>Seasonal donation drives collecting essentials for families and orphanages in need across the city.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALLERY / PHOTO WALL ===================== -->
+    <section id="gallery" class="section-gallery" aria-labelledby="gallery-heading">
+      <div class="gallery-header">
+        <div class="section-label">TOGETHER</div>
+        <h2 id="gallery-heading" class="display-headline gallery-heading-text">TOGETHER, WE<br/>CREATE CHANGE.</h2>
+      </div>
+      <div class="gallery-collage" id="gallery-collage">
+        <div class="gallery-item gi-1" data-caption="Community day — Makassar" data-cat="Community" data-date="2026" tabindex="0" role="button" aria-label="View photo: Community day Makassar">
+          <div class="gallery-photo-frame">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=700&q=80" alt="Leo Hands of Nurture volunteers at a community day event" loading="lazy" />
+          </div>
+          <span class="gallery-caption">Community Day</span>
+        </div>
+        <div class="gallery-item gi-2" data-caption="Eye care initiative — 28 June 2026" data-cat="Health" data-date="June 2026" tabindex="0" role="button" aria-label="View photo: Eye care initiative">
+          <div class="gallery-photo-frame polaroid">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&q=80" alt="A participant receiving a free eye examination" loading="lazy" />
+            <span class="polaroid-label">28.06.2026</span>
+          </div>
+        </div>
+        <div class="gallery-item gi-3" data-caption="English class at local orphanage" data-cat="Education" data-date="2026" tabindex="0" role="button" aria-label="View photo: English class at orphanage">
+          <div class="gallery-photo-frame">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=700&q=80" alt="Children enthusiastically learning English" loading="lazy" />
+          </div>
+        </div>
+        <div class="gallery-item gi-4" data-caption="Volunteers in action" data-cat="Volunteering" data-date="2026" tabindex="0" role="button" aria-label="View photo: Volunteers in action">
+          <div class="gallery-photo-frame polaroid">
+            <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=500&q=80" alt="Leo Club Makassar volunteers at a community event" loading="lazy" />
+            <span class="polaroid-label">VOLUNTEER DAY</span>
+          </div>
+        </div>
+        <div class="gallery-item gi-5" data-caption="Healthcare outreach event" data-cat="Health" data-date="2026" tabindex="0" role="button" aria-label="View photo: Healthcare outreach">
+          <div class="gallery-photo-frame">
+            <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?w=600&q=80" alt="Healthcare volunteers at a community outreach event" loading="lazy" />
+          </div>
+        </div>
+        <div class="gallery-item gi-6" data-caption="Orphanage support visit" data-cat="Community" data-date="2026" tabindex="0" role="button" aria-label="View photo: Orphanage support">
+          <div class="gallery-photo-frame">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=500&q=80" alt="Volunteers with children at a local orphanage" loading="lazy" />
+          </div>
+        </div>
+        <div class="gallery-item gi-7" data-caption="Youth action planning session" data-cat="Volunteering" data-date="2026" tabindex="0" role="button" aria-label="View photo: Youth action">
+          <div class="gallery-photo-frame polaroid">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80" alt="Young volunteer at a Leo Club planning session" loading="lazy" />
+            <span class="polaroid-label">YOUTH ACTION</span>
+          </div>
+        </div>
+        <div class="gallery-item gi-8" data-caption="Patient receiving free prescription glasses" data-cat="Health" data-date="June 2026" tabindex="0" role="button" aria-label="View photo: Free glasses distribution">
+          <div class="gallery-photo-frame">
+            <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=500&q=80" alt="Community member receiving free prescription glasses" loading="lazy" />
+          </div>
+        </div>
+        <div class="gallery-sparkles" aria-hidden="true">
+          <span class="g-spark gs1">✦</span>
+          <span class="g-spark gs2">✧</span>
+          <span class="g-spark gs3">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LIGHTBOX ===================== -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close image viewer">✕</button>
+      <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">←</button>
+      <button class="lightbox-next" id="lightbox-next" aria-label="Next image">→</button>
+      <div class="lightbox-inner">
+        <img id="lightbox-img" src="" alt="" />
+        <div class="lightbox-info">
+          <span id="lightbox-caption"></span>
+          <span id="lightbox-cat" class="lightbox-cat"></span>
+          <span id="lightbox-date" class="lightbox-date"></span>
+        </div>
+      </div>
+    </div>
+    <div class="lightbox-overlay" id="lightbox-overlay" hidden></div>
+
+    <!-- ===================== STORIES ===================== -->
+    <section id="stories" class="section-stories" aria-labelledby="stories-heading">
+      <div class="stories-header">
+        <div class="section-label">FROM THE FIELD</div>
+        <h2 id="stories-heading" class="display-headline">OUR STORIES</h2>
+        <p class="stories-sub">Community. Education. Health. Life.</p>
+      </div>
+      <div class="stories-grid">
+
+        <!-- Story 1: Eye Care — scrolls to campaign-story section -->
+        <article class="story-card story-card-featured" tabindex="0">
+          <div class="story-card-image">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=900&q=85" alt="The Clearer Vision Brighter Futures event at Mall Pipo Makassar" loading="lazy" />
+            <span class="story-card-cat">HEALTH</span>
+          </div>
+          <div class="story-card-content">
+            <span class="story-card-date">28 June 2026</span>
+            <h3 class="story-card-title">877 Lives Touched: Our Eye Care Initiative</h3>
+            <p class="story-card-desc">Over one day, 877 people received free eye examinations at Mall Pipo, Atrium Bira. 570 went home with prescription glasses. Here's how we made it happen.</p>
+            <a href="#campaign-story" class="story-read-more">READ STORY →</a>
+          </div>
+        </article>
+
+        <!-- Story 2: Education — opens modal -->
+        <article class="story-card" tabindex="0">
+          <div class="story-card-image">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=700&q=80" alt="Children joyfully participating in an English lesson" loading="lazy" />
+            <span class="story-card-cat">EDUCATION</span>
+          </div>
+          <div class="story-card-content">
+            <span class="story-card-date">Ongoing</span>
+            <h3 class="story-card-title">Opening Doors: English Literacy at the Orphanage</h3>
+            <p class="story-card-desc">Every Saturday, our volunteers bring English lessons and friendship to children who rarely get to explore the world through language.</p>
+            <button
+              class="story-read-more"
+              data-story="education"
+              aria-haspopup="dialog"
+              aria-label="Read story: Opening Doors English Literacy"
+            >READ STORY →</button>
+          </div>
+        </article>
+
+        <!-- Story 3: Community — opens modal -->
+        <article class="story-card" tabindex="0">
+          <div class="story-card-image">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=700&q=80" alt="Volunteers sitting with and listening to children at an orphanage" loading="lazy" />
+            <span class="story-card-cat">COMMUNITY</span>
+          </div>
+          <div class="story-card-content">
+            <span class="story-card-date">Ongoing</span>
+            <h3 class="story-card-title">More Than Donations: Being Present</h3>
+            <p class="story-card-desc">We don't just drop off goods. We show up, we sit down, we listen. Community begins with presence.</p>
+            <button
+              class="story-read-more"
+              data-story="community"
+              aria-haspopup="dialog"
+              aria-label="Read story: More Than Donations Being Present"
+            >READ STORY →</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== STORY MODALS ===================== -->
+    <!-- Education story modal -->
+    <div id="story-modal-education" class="story-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="sme-title" hidden>
+      <div class="story-modal">
+        <button class="story-modal-close" aria-label="Close story">✕</button>
+        <div class="story-modal-image">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=85" alt="Children in an English literacy session at a Makassar orphanage" loading="lazy" />
+        </div>
+        <div class="story-modal-body">
+          <span class="story-modal-cat">EDUCATION</span>
+          <span class="story-modal-date">Ongoing Program</span>
+          <h2 class="story-modal-title" id="sme-title">Opening Doors: English Literacy at the Orphanage</h2>
+          <p>Every Saturday morning, a group of Leo Hands of Nurture volunteers arrives at a local orphanage in Makassar with lesson materials, games, and a lot of enthusiasm. For many of the children there, this is the only structured English learning they receive.</p>
+          <p>English opens doors. It builds confidence in students who want to compete in a wider world — whether in higher education, work, or simply communicating with people beyond their community. Our volunteers don't just teach language. They show up, week after week, as friends and mentors.</p>
+          <p>If you want to join us as a teaching volunteer, or if your school or organization wants to collaborate on expanding the program, we'd love to hear from you.</p>
+          <div class="story-modal-cta">
+            <a href="#collaborate" class="btn-primary">GET INVOLVED →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Community story modal -->
+    <div id="story-modal-community" class="story-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="smc-title" hidden>
+      <div class="story-modal">
+        <button class="story-modal-close" aria-label="Close story">✕</button>
+        <div class="story-modal-image">
+          <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=85" alt="Volunteers spending time with children at an orphanage" loading="lazy" />
+        </div>
+        <div class="story-modal-body">
+          <span class="story-modal-cat">COMMUNITY</span>
+          <span class="story-modal-date">Ongoing Program</span>
+          <h2 class="story-modal-title" id="smc-title">More Than Donations: Being Present</h2>
+          <p>It is easy to donate goods. It is harder — and more meaningful — to show up. Leo Hands of Nurture doesn't treat community support as a transaction. We visit. We sit down. We listen. We share meals, play games, and spend real time with the children and families we serve.</p>
+          <p>Our orphanage support program includes regular visits, seasonal donation drives, and holiday programs — but the heart of it is human connection. The children we visit don't just need supplies. They need to know people care about them.</p>
+          <p>If you want to be part of this program as a volunteer, or if you'd like to contribute to our donation drives, reach out through our contact form below.</p>
+          <div class="story-modal-cta">
+            <a href="#collaborate" class="btn-primary">GET INVOLVED →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== TEAM / PEOPLE SECTION ===================== -->
+    <section id="team" class="section-team" aria-labelledby="team-heading">
+      <div class="team-header">
+        <div class="section-label">OUR PEOPLE</div>
+        <h2 id="team-heading" class="display-headline team-heading">THE PEOPLE<br/>BEHIND THE WORK.</h2>
+        <p class="team-sub">Leo Hands of Nurture is entirely youth-led. Every program, every event, every visit is driven by young volunteers who give their time, energy, and heart to the community.</p>
+      </div>
+
+      <div class="team-grid">
+        <!-- Featured slot — replace with real photo and name when available -->
+        <div class="team-card team-card-featured">
+          <div class="team-card-placeholder team-card-img">
+            <span class="team-card-placeholder-icon">🧑‍🤝‍🧑</span>
+            <span class="team-card-placeholder-text">PHOTO<br/>PLACEHOLDER</span>
+          </div>
+          <div class="team-card-body">
+            <span class="team-card-role">CHAPTER PRESIDENT</span>
+            <h3 class="team-card-name">[Name Placeholder]</h3>
+            <p class="team-card-desc">Leading Leo Hands of Nurture's vision, strategy and volunteer coordination across all programs in Makassar.</p>
+          </div>
+        </div>
+
+        <!-- Supporting cards -->
+        <div class="team-card">
+          <div class="team-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500&q=80"
+              alt="Leo Hands of Nurture volunteers at a community event"
+              loading="lazy"
+            />
+          </div>
+          <div class="team-card-body">
+            <span class="team-card-role">PROGRAM VOLUNTEERS</span>
+            <h3 class="team-card-name">Our Volunteer Team</h3>
+            <p class="team-card-desc">Dedicated young people who drive education, health and community programs week after week.</p>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&q=80"
+              alt="Healthcare volunteers at the eye care initiative"
+              loading="lazy"
+            />
+          </div>
+          <div class="team-card-body">
+            <span class="team-card-role">HEALTH INITIATIVE TEAM</span>
+            <h3 class="team-card-name">Healthcare Coordinators</h3>
+            <p class="team-card-desc">The team behind the Clearer Vision initiative — coordinating doctors, healthcare workers and community outreach.</p>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=500&q=80"
+              alt="Education volunteers with children in a classroom"
+              loading="lazy"
+            />
+          </div>
+          <div class="team-card-body">
+            <span class="team-card-role">EDUCATION VOLUNTEERS</span>
+            <h3 class="team-card-name">English Literacy Team</h3>
+            <p class="team-card-desc">Volunteers who show up every week to teach English and build futures for children in orphanages across Makassar.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Community faces strip -->
+      <div class="team-community-strip">
+        <p class="team-community-label">OUR COMMUNITY</p>
+        <div class="team-faces-row" aria-label="Community member photos">
+          <div class="team-face">
+            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=150&q=80" alt="Community volunteer" loading="lazy" />
+          </div>
+          <div class="team-face">
+            <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=150&q=80" alt="Community volunteer" loading="lazy" />
+          </div>
+          <div class="team-face">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=150&q=80" alt="Community participant" loading="lazy" />
+          </div>
+          <div class="team-face">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=150&q=80" alt="Youth volunteer" loading="lazy" />
+          </div>
+          <div class="team-face">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80" alt="Youth volunteer" loading="lazy" />
+          </div>
+          <!-- Placeholder slots for real member photos -->
+          <div class="team-face-placeholder" aria-label="Photo placeholder">👤</div>
+          <div class="team-face-placeholder" aria-label="Photo placeholder">👤</div>
+          <div class="team-face-placeholder" aria-label="Photo placeholder">👤</div>
+          <div class="team-face-placeholder" aria-label="Photo placeholder">👤</div>
+          <div class="team-face-placeholder" aria-label="Photo placeholder">👤</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GLOBAL NETWORK ===================== -->
+    <section id="network" class="section-network" aria-labelledby="network-heading">
+      <div class="network-inner">
+        <div class="section-label">OUR ROOTS</div>
+        <h2 id="network-heading" class="display-headline network-heading-text">PART OF A GLOBAL NETWORK<br/>OF YOUNG CHANGEMAKERS.</h2>
+        <p class="network-body">Leo Hands of Nurture operates under the global Leo Club ecosystem — the youth wing of Lions International, one of the world's largest service organizations. We are proud to be part of this global family of community-first volunteers.</p>
+        <div class="network-logos">
+          <div class="network-logo-item">
+            <div class="network-logo-placeholder">
+              <div class="logo-inner">
+                <img
+                  src="assets/logo.png"
+                  alt="Leo Club Makassar — Hands of Nurture official logo"
+                  class="network-real-logo"
+                />
+                <span>Hands of Nurture</span>
+              </div>
+            </div>
+          </div>
+          <div class="network-logo-item">
+            <div class="network-logo-placeholder">
+              <div class="logo-inner">
+                <svg viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <text x="4" y="30" font-family="serif" font-size="26" font-weight="bold" fill="#f5a623">LEO</text>
+                </svg>
+                <span>Leo Club International</span>
+              </div>
+            </div>
+          </div>
+          <div class="network-logo-item">
+            <div class="network-logo-placeholder">
+              <div class="logo-inner">
+                <svg viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="20" cy="20" r="14" fill="none" stroke="#f5a623" stroke-width="2"/>
+                  <text x="38" y="24" font-family="serif" font-size="9" font-weight="bold" fill="#f5a623">LIONS</text>
+                </svg>
+                <span>Lions International</span>
+              </div>
+            </div>
+          </div>
+          <div class="network-logo-item">
+            <div class="network-logo-placeholder">
+              <div class="logo-inner">
+                <span class="partner-placeholder-text">COMMUNITY<br/>PARTNERS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GET INVOLVED ===================== -->
+    <section id="get-involved" class="section-get-involved" aria-labelledby="gi-heading">
+      <div class="gi-bg" aria-hidden="true">
+        <div class="gi-shape gs1"></div>
+        <div class="gi-shape gs2"></div>
+      </div>
+      <div class="gi-sparkles" aria-hidden="true">
+        <span class="gi-spark gis1">✦</span>
+        <span class="gi-spark gis2">✧</span>
+        <span class="gi-spark gis3">✦</span>
+      </div>
+      <div class="gi-inner-wrap">
+        <div class="gi-content">
+          <div class="section-label on-dark">JOIN US</div>
+          <h2 id="gi-heading" class="display-headline gi-headline">
+            <span>BE PART</span>
+            <span>OF THE</span>
+            <span>CHANGE.</span>
+          </h2>
+          <p class="gi-sub">JOIN A COMMUNITY OF YOUNG PEOPLE<br/>TURNING COMPASSION INTO ACTION.</p>
+          <div class="gi-ctas">
+            <a href="#collaborate" class="btn-primary-light gi-btn">JOIN US →</a>
+            <a href="#collaborate" class="btn-outline-light gi-btn">BECOME A VOLUNTEER</a>
+          </div>
+        </div>
+        <div class="gi-photo-collage" aria-hidden="true">
+          <div class="gi-photo gp1">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80" alt="Youth volunteers celebrating together" loading="lazy" />
+          </div>
+          <div class="gi-photo gp2">
+            <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=500&q=80" alt="Community action event with volunteers" loading="lazy" />
+          </div>
+          <div class="gi-photo gp3">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=500&q=80" alt="Volunteers helping children at an orphanage" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COLLABORATE / CONTACT ===================== -->
+    <section id="collaborate" class="section-collaborate" aria-labelledby="collab-heading">
+      <div class="collab-grid">
+        <div class="collab-text-col">
+          <div class="section-label">CONNECT</div>
+          <h2 id="collab-heading" class="display-headline collab-headline">
+            LET'S CREATE<br/>CHANGE<br/>TOGETHER.
+          </h2>
+          <p class="collab-body">We welcome schools, youth organizations, community groups, healthcare partners, local businesses, and volunteers. If you share our mission, we want to hear from you.</p>
+          <div class="collab-invite-tags">
+            <span class="ctag">Schools</span>
+            <span class="ctag">Youth Organizations</span>
+            <span class="ctag">Healthcare Partners</span>
+            <span class="ctag">Community Groups</span>
+            <span class="ctag">Local Businesses</span>
+            <span class="ctag">Volunteers</span>
+          </div>
+        </div>
+
+        <div class="collab-form-col">
+          <form class="collab-form" id="collab-form" novalidate aria-label="Contact and collaboration form">
+            <div class="form-group">
+              <label for="field-name" class="form-label">NAME <span aria-hidden="true">*</span></label>
+              <input type="text" id="field-name" name="name" class="form-input" placeholder="Your full name" autocomplete="name" required aria-required="true" aria-describedby="error-name" />
+              <span class="form-error-msg" id="error-name" role="alert" aria-live="polite">Please enter your name.</span>
+            </div>
+            <div class="form-group">
+              <label for="field-email" class="form-label">EMAIL <span aria-hidden="true">*</span></label>
+              <input type="email" id="field-email" name="email" class="form-input" placeholder="your@email.com" autocomplete="email" required aria-required="true" aria-describedby="error-email" />
+              <span class="form-error-msg" id="error-email" role="alert" aria-live="polite">Please enter a valid email address.</span>
+            </div>
+            <div class="form-group">
+              <label for="field-org" class="form-label">ORGANIZATION</label>
+              <input type="text" id="field-org" name="organization" class="form-input" placeholder="School, company, or group (optional)" autocomplete="organization" />
+            </div>
+            <div class="form-group">
+              <label for="field-message" class="form-label">MESSAGE <span aria-hidden="true">*</span></label>
+              <textarea id="field-message" name="message" class="form-input form-textarea" placeholder="Tell us how you'd like to collaborate…" rows="5" required aria-required="true" aria-describedby="error-message"></textarea>
+              <span class="form-error-msg" id="error-message" role="alert" aria-live="polite">Please enter a message.</span>
+            </div>
+            <button type="submit" class="btn-primary form-submit" id="form-submit-btn">SEND MESSAGE →</button>
+            <div class="form-success" id="form-success" hidden role="status" aria-live="polite">
+              <span aria-hidden="true">✦</span>
+              <span>Thank you! Your message has been received. We'll be in touch soon.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="footer" class="site-footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="footer-statement display-headline">
+        <span>CLEARER</span>
+        <span>VISION.</span>
+        <span class="footer-accent">BRIGHTER</span>
+        <span>FUTURE.</span>
+      </div>
+    </div>
+    <div class="footer-body">
+      <div class="footer-brand-col">
+        <div class="footer-logo">
+          <img
+            src="assets/logo.png"
+            alt="Leo Club Makassar — Hands of Nurture"
+            class="footer-logo-img"
+          />
+          <span>LEO HANDS OF NURTURE</span>
+        </div>
+        <p class="footer-tagline-text">Youth-led. Volunteer-driven.<br/>Real change in Makassar.</p>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="footer-instagram" aria-label="Follow Leo Hands of Nurture on Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+          <span>@leohandsofnurture</span>
+        </a>
+      </div>
+      <nav class="footer-nav-col" aria-label="Footer navigation">
+        <h3 class="footer-nav-heading">NAVIGATE</h3>
+        <ul role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#what-we-do">What We Do</a></li>
+          <li><a href="#impact">Impact</a></li>
+          <li><a href="#stories">Stories</a></li>
+          <li><a href="#team">Our People</a></li>
+          <li><a href="#get-involved">Get Involved</a></li>
+          <li><a href="#collaborate">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-location-col">
+        <h3 class="footer-nav-heading">LOCATION</h3>
+        <address class="footer-address">
+          Makassar,<br/>South Sulawesi,<br/>Indonesia
+        </address>
+        <div class="footer-affiliation">
+          <span>Leo Club Ecosystem</span>
+          <span>District 307 B2 Indonesia</span>
+          <span>Lions International</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copyright">© LEO HANDS OF NURTURE — LEO CLUB MAKASSAR</span>
+      <div class="footer-bottom-sparkles" aria-hidden="true">
+        <span>✦</span><span>✧</span><span>✦</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
