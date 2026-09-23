@@ -25,6 +25,707 @@
   const $  = (sel, ctx) => (ctx || document).querySelector(sel);
   const $$ = (sel, ctx) => [...(ctx || document).querySelectorAll(sel)];
 
+  /* Content supplied later can be added here without changing page markup. */
+  const siteData = {
+    overallStats: {
+      participantsReached: null,
+      eventsCompleted: null,
+      volunteersInvolved: null,
+      communitiesReached: null,
+    },
+    pillars: Array.from({ length: 8 }, (_, index) => ({
+      number: String(index + 1).padStart(2, '0'),
+      name: `[PILLAR ${String(index + 1).padStart(2, '0')} — CONTENT TO BE PROVIDED]`,
+      description: '[Official pillar description to be provided by the organization.]',
+      image: null,
+    })),
+    teamDepartments: [
+      {
+        id: 'executive',
+        number: '01',
+        name: 'EXECUTIVE TEAM',
+        description: 'Guiding the overarching strategic vision, partnerships, and core operations of Leo Hands of Nurture in Makassar.',
+        members: [
+          {
+            id: 'intan-soetrisno',
+            name: 'Nur Mani Intan Soetrisno',
+            age: 16,
+            department: 'Executive Team',
+            image: 'assets/team/intan-soetrisno.jpg',
+            imagePosition: 'center 20%',
+            quote: 'To be able to bring service to people in need is honestly such a privilege. Because what’s the point of having something good if you can’t use it to do some good too?',
+            instagram: {
+              handle: '@intannsoe',
+              url: 'https://www.instagram.com/intannsoe/'
+            },
+            linkedin: null,
+            substack: null,
+            isLeader: false
+          },
+          {
+            id: 'arwendy-arifin',
+            name: 'Arwendy Arifin',
+            age: 17,
+            department: 'Executive Team',
+            image: 'assets/team/arwendy-arifin.jpg',
+            imagePosition: 'center 15%',
+            quote: 'Smile and be wild',
+            instagram: {
+              handle: '@apacihehe',
+              url: 'https://www.instagram.com/apacihehe/'
+            },
+            linkedin: null,
+            substack: null,
+            isLeader: false
+          },
+          {
+            id: 'edith-hoeijaya',
+            name: 'Edith Hoeijaya',
+            age: 17,
+            department: 'Executive Team',
+            image: 'assets/team/edith-hoeijaya.jpg',
+            imagePosition: 'center 20%',
+            quote: 'We may not be able to help everyone, but we can help someone',
+            instagram: {
+              handle: '@edith_hoeijaya',
+              url: 'https://www.instagram.com/edith_hoeijaya/'
+            },
+            linkedin: null,
+            substack: {
+              publication: 'Interlinia Publication',
+              handle: '@edith hoeijaya',
+              url: null
+            },
+            isLeader: false
+          },
+          {
+            id: 'nur-aqilah-zahrah',
+            name: 'Nur Aqilah Zahrah A.',
+            age: 16,
+            department: 'Executive Team',
+            image: 'assets/team/nur-aqilah-zahrah.jpg',
+            imagePosition: 'center 25%',
+            quote: 'Service to others is the rent you pay for your room here on Earth. — Muhammad Ali',
+            instagram: {
+              handle: '@nurz_ahraaa',
+              url: 'https://www.instagram.com/nurz_ahraaa/'
+            },
+            linkedin: null,
+            substack: null,
+            isLeader: false
+          },
+          {
+            id: 'chayla',
+            name: 'Chayla',
+            age: null,
+            department: 'Executive Team',
+            image: null,
+            quote: null,
+            instagram: null,
+            linkedin: null,
+            substack: null,
+            isLeader: false
+          }
+        ]
+      },
+      {
+        id: 'social-media',
+        number: '02',
+        name: 'SOCIAL MEDIA TEAM',
+        description: 'Documenting community stories, elevating youth voices, and shaping digital storytelling across Makassar and beyond.',
+        members: [
+          {
+            id: 'fiona-gauw',
+            name: 'Fiona Gauw',
+            age: 16,
+            department: 'Social Media Team',
+            image: 'assets/team/fiona-gauw.jpg',
+            imagePosition: 'center 20%',
+            quote: null,
+            instagram: null,
+            linkedin: null,
+            substack: null,
+            isLeader: false
+          },
+          {
+            id: 'clarence',
+            name: 'Clarence',
+            age: null,
+            department: 'Social Media Team',
+            image: null,
+            quote: null,
+            instagram: null,
+            linkedin: null,
+            substack: null,
+            isLeader: false
+          },
+          {
+            id: 'rebecca',
+            name: 'Rebecca',
+            age: null,
+            department: 'Social Media Team',
+            image: null,
+            quote: null,
+            instagram: null,
+            linkedin: null,
+            substack: null,
+            isLeader: false
+          }
+        ]
+      },
+      {
+        id: 'human-resource',
+        number: '03',
+        name: 'HUMAN RESOURCE TEAM',
+        description: 'Fostering member development, volunteer coordination, and building an inclusive, purpose-driven community culture.',
+        members: [
+          {
+            id: 'felix-wilbert-gosal',
+            name: 'Felix Wilbert Gosal',
+            age: 18,
+            department: 'Human Resource Team',
+            image: 'assets/team/felix-wilbert-gosal.jpg',
+            imagePosition: 'center 20%',
+            quote: 'Stop at nothing',
+            instagram: null,
+            linkedin: null,
+            substack: null,
+            isLeader: false
+          },
+          {
+            id: 'richard-ernestan-kusuma',
+            name: 'Richard Ernestan Kusuma',
+            age: 16,
+            department: 'Human Resource Team',
+            image: 'assets/team/richard-ernestan-kusuma.jpg',
+            imagePosition: 'center 18%',
+            quote: 'Action is the foundational key to all success.',
+            instagram: {
+              handle: 'Instagram',
+              url: 'https://shorturl.at/9vWtM'
+            },
+            linkedin: {
+              handle: 'LinkedIn Profile',
+              url: 'https://www.linkedin.com/in/richard-ernestan-kusuma-89a9b439/'
+            },
+            substack: null,
+            isLeader: false
+          },
+          {
+            id: 'kevin',
+            name: 'Kevin',
+            age: null,
+            department: 'Human Resource Team',
+            image: null,
+            quote: null,
+            instagram: null,
+            linkedin: null,
+            substack: null,
+            isLeader: false
+          }
+        ]
+      }
+    ],
+    teamCategories: ['EXECUTIVE TEAM', 'SOCIAL MEDIA TEAM', 'HUMAN RESOURCE TEAM'],
+    teamMembers: [],
+    events: [
+      {
+        id: 'clearer-vision-brighter-futures',
+        title: 'Clearer Vision, Brighter Futures',
+        date: '28 June 2026',
+        category: 'HEALTH',
+        description: 'Free comprehensive eye examination and prescription glasses distribution for community members and youth across Makassar.',
+        image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=85',
+        location: 'Makassar, South Sulawesi, Indonesia',
+        statistics: {
+          'Participants Reached': '877',
+          'Prescription Glasses Distributed': 'Verified',
+          'Community Volunteers': 'Active',
+        },
+        gallery: [
+          { src: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=700&q=80', caption: 'Free eye examination at Clearer Vision event' },
+          { src: 'https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=700&q=80', caption: 'Community member receiving prescription glasses' },
+          { src: 'https://images.unsplash.com/photo-1551076805-e1869033e561?w=700&q=80', caption: 'Healthcare outreach team in action' },
+        ],
+      },
+      {
+        id: 'event-details-to-be-provided',
+        title: 'English Literacy Sessions',
+        date: 'Ongoing Program',
+        category: 'EDUCATION',
+        description: 'Regular English learning and literacy sessions for children in underserved schools and orphanages in Makassar.',
+        image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=85',
+        location: 'Makassar, South Sulawesi, Indonesia',
+        statistics: {},
+        gallery: [
+          { src: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=700&q=80', caption: 'Children learning English with volunteers' },
+        ],
+      },
+      {
+        id: 'event-details-to-be-provided',
+        title: 'Orphanage Support & Community Visits',
+        date: 'Ongoing Program',
+        category: 'COMMUNITY',
+        description: 'Regular visits, donations, and hands-on activities bringing joy, mentorship, and essentials to local orphanages.',
+        image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=85',
+        location: 'Makassar, South Sulawesi, Indonesia',
+        statistics: {},
+        gallery: [
+          { src: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=700&q=80', caption: 'Volunteers spending time with children' },
+        ],
+      },
+      {
+        id: 'event-details-to-be-provided',
+        title: '[EVENT TITLE TO BE PROVIDED]',
+        date: '[EVENT DATE TO BE PROVIDED]',
+        category: 'EVENT',
+        description: '[Event description, location, and verified results will be added when official information is provided.]',
+        image: null,
+        location: null,
+        statistics: {},
+        gallery: [],
+      },
+    ],
+  };
+
+  function renderPillars() {
+    const grid = $('#pillar-grid');
+    if (!grid) return;
+    grid.innerHTML = siteData.pillars.map(pillar => `
+      <article class="wwd-card" tabindex="0">
+        <div class="wwd-card-number" aria-hidden="true">${pillar.number}</div>
+        <div class="wwd-card-image wwd-card-image-placeholder" aria-hidden="true">
+          ${pillar.image ? `<img src="${pillar.image}" alt="${pillar.name}" loading="lazy" />` : `<span>IMAGE / ICON<br/>TO BE PROVIDED</span>`}
+        </div>
+        <div class="wwd-card-content">
+          <h3 class="wwd-card-title">${pillar.name}</h3>
+          <p>${pillar.description}</p>
+          <span class="wwd-arrow" aria-hidden="true">→</span>
+        </div>
+      </article>
+    `).join('');
+  }
+
+  function renderEventTimeline() {
+    const timeline = $('#event-timeline');
+    if (!timeline) return;
+    const isSubdir = window.location.pathname.includes('/events/');
+    const basePath = isSubdir ? '' : 'events/';
+
+    timeline.innerHTML = siteData.events.map((event, index) => {
+      const isRight = index % 2 === 1;
+      const sideClass = isRight ? 'timeline-side-right' : 'timeline-side-left';
+
+      const cardHtml = `
+        <div class="timeline-event-card">
+          <div class="timeline-image-wrap ${event.image ? '' : 'timeline-image-placeholder'}" aria-hidden="true">
+            ${event.image ? `
+              <img src="${event.image}" alt="${event.title}" loading="lazy" />
+            ` : `
+              <div class="timeline-placeholder-content">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="timeline-placeholder-icon" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <path d="M21 15l-5-5L5 21"/>
+                </svg>
+                <span>EVENT IMAGE TO BE PROVIDED</span>
+              </div>
+            `}
+          </div>
+          <div class="timeline-card-content">
+            <div class="timeline-card-meta">
+              <span class="timeline-category-tag">${event.category || 'EVENT'}</span>
+              <span class="timeline-card-date-inline">${event.date}</span>
+            </div>
+            <h3 class="timeline-event-title">${event.title}</h3>
+            <p class="timeline-event-desc">${event.description}</p>
+            <div class="timeline-card-bottom">
+              <a class="timeline-cta-btn" href="${basePath}${event.id}.html">VIEW EVENT <span class="cta-arrow" aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </div>
+      `;
+
+      const dateHtml = `
+        <div class="timeline-date-display">
+          <span class="timeline-date-primary">${event.date}</span>
+          ${event.location ? `<span class="timeline-location-tag">📍 ${event.location.split(',')[0]}</span>` : ''}
+        </div>
+      `;
+
+      return `
+        <article class="timeline-row ${sideClass}" data-index="${index}">
+          <div class="timeline-col-left ${isRight ? 'timeline-date-col' : 'timeline-card-col'}">
+            ${isRight ? dateHtml : cardHtml}
+          </div>
+          <div class="timeline-col-center">
+            <div class="timeline-node" aria-hidden="true">
+              <span class="timeline-node-dot"></span>
+            </div>
+          </div>
+          <div class="timeline-col-right ${isRight ? 'timeline-card-col' : 'timeline-date-col'}">
+            ${isRight ? cardHtml : dateHtml}
+          </div>
+        </article>
+      `;
+    }).join('');
+  }
+
+  function renderMemberCard(member, isFeatured = false) {
+    const hasPhoto = Boolean(member.image);
+    const photoHtml = hasPhoto
+      ? `<div class="team-card-avatar-wrap">
+           <div class="team-avatar-circle">
+             <img src="${member.image}" alt="${member.name}" class="team-card-avatar-img" loading="lazy" style="${member.imagePosition ? `object-position: ${member.imagePosition};` : ''}" />
+           </div>
+         </div>`
+      : `<div class="team-card-avatar-wrap">
+           <div class="team-avatar-circle team-avatar-placeholder" aria-label="Photo coming soon">
+             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="placeholder-avatar-svg" aria-hidden="true">
+               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+             </svg>
+             <span class="placeholder-avatar-text">COMING SOON</span>
+           </div>
+         </div>`;
+
+    const agePill = member.age ? `<span class="team-pill team-age-pill">${member.age} YRS</span>` : '';
+    const deptPill = `<span class="team-pill team-dept-pill">${member.department}</span>`;
+    
+    const quoteHtml = member.quote
+      ? `<blockquote class="team-card-quote"><p>“${member.quote}”</p></blockquote>`
+      : '';
+
+    let socialHtml = '';
+    const socials = [];
+    if (member.instagram) {
+      socials.push(`
+        <a href="${member.instagram.url}" target="_blank" rel="noopener noreferrer" class="team-social-badge" title="Instagram: ${member.instagram.handle}" onclick="event.stopPropagation();" aria-label="${member.name} on Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="social-icon-svg" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+          <span>${member.instagram.handle}</span>
+        </a>
+      `);
+    }
+    if (member.linkedin) {
+      socials.push(`
+        <a href="${member.linkedin.url}" target="_blank" rel="noopener noreferrer" class="team-social-badge" title="LinkedIn Profile" onclick="event.stopPropagation();" aria-label="${member.name} on LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="social-icon-svg" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+          <span>${member.linkedin.handle || 'LinkedIn'}</span>
+        </a>
+      `);
+    }
+    if (member.substack) {
+      socials.push(`
+        <span class="team-social-badge team-substack-badge" title="Substack: ${member.substack.publication}" onclick="event.stopPropagation();">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="social-icon-svg" aria-hidden="true">
+            <path d="M4 4h16v3H4zM4 9h16v3H4zM4 14l8 6 8-6v6H4z"/>
+          </svg>
+          <span>${member.substack.handle || member.substack.publication}</span>
+        </span>
+      `);
+    }
+    if (socials.length) {
+      socialHtml = `<div class="team-card-socials-row">${socials.join('')}</div>`;
+    }
+
+    return `
+      <article class="team-profile-card ${isFeatured ? 'team-card-featured' : ''} ${hasPhoto ? 'has-portrait' : 'is-placeholder-card'}" data-member-id="${member.id}" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View profile of ${member.name}">
+        <div class="team-card-top">
+          ${photoHtml}
+        </div>
+        <div class="team-card-main">
+          <div class="team-card-pills-row">
+            ${deptPill}
+            ${agePill}
+          </div>
+          <h3 class="team-profile-name">${member.name}</h3>
+          ${quoteHtml}
+          ${socialHtml}
+          <div class="team-card-hover-action">
+            <span class="team-view-text">VIEW PROFILE <span class="action-arrow" aria-hidden="true">→</span></span>
+          </div>
+        </div>
+      </article>
+    `;
+  }
+
+  function renderTeamDirectory() {
+    const directory = $('#team-directory-content');
+    if (!directory) return;
+
+    directory.innerHTML = siteData.teamDepartments.map((dept, deptIndex) => {
+      const leaders = dept.members.filter(m => m.isLeader);
+      const members = dept.members.filter(m => !m.isLeader);
+
+      let layoutHtml = '';
+      if (leaders.length > 0) {
+        layoutHtml = `
+          <div class="team-leadership-row">
+            <div class="team-leadership-grid">
+              ${leaders.map(m => renderMemberCard(m, true)).join('')}
+            </div>
+          </div>
+          ${members.length > 0 ? `
+            <div class="team-members-wrapper">
+              <div class="team-members-grid ${dept.id === 'executive' ? 'team-grid-executive' : ''}">
+                ${members.map(m => renderMemberCard(m, false)).join('')}
+              </div>
+            </div>
+          ` : ''}
+        `;
+      } else {
+        layoutHtml = `
+          <div class="team-members-wrapper">
+            <div class="team-members-grid ${dept.id === 'executive' ? 'team-grid-executive' : ''}">
+              ${members.map(m => renderMemberCard(m, false)).join('')}
+            </div>
+          </div>
+        `;
+      }
+
+      return `
+        <section class="team-department-block" id="dept-${dept.id}" aria-labelledby="dept-heading-${dept.id}">
+          <div class="team-dept-header">
+            <div class="team-dept-label-wrap">
+              <span class="section-label">${dept.number} — ${dept.name}</span>
+            </div>
+            <h2 id="dept-heading-${dept.id}" class="team-dept-title display-headline">${dept.name}</h2>
+            <p class="team-dept-intro">${dept.description}</p>
+          </div>
+          ${layoutHtml}
+        </section>
+      `;
+    }).join('');
+
+    initTeamModal();
+  }
+
+  function initTeamModal() {
+    const overlay = $('#team-modal-overlay');
+    const modalBody = $('#team-modal-body');
+    const closeBtn = $('#team-modal-close');
+    const backdrop = $('#team-modal-backdrop');
+    if (!overlay || !modalBody) return;
+
+    let lastFocusedElement = null;
+
+    function openModalForMember(memberId) {
+      let foundMember = null;
+      for (const dept of siteData.teamDepartments) {
+        const m = dept.members.find(item => item.id === memberId);
+        if (m) { foundMember = m; break; }
+      }
+      if (!foundMember) return;
+
+      lastFocusedElement = document.activeElement;
+
+      const hasPhoto = Boolean(foundMember.image);
+      const photoHtml = hasPhoto
+        ? `<div class="modal-portrait-circle">
+             <img src="${foundMember.image}" alt="${foundMember.name}" class="modal-portrait-img" style="${foundMember.imagePosition ? `object-position: ${foundMember.imagePosition};` : ''}" />
+           </div>`
+        : `<div class="modal-portrait-circle modal-portrait-placeholder" aria-label="Photo coming soon">
+             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="modal-placeholder-svg" aria-hidden="true">
+               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+             </svg>
+             <span class="modal-placeholder-tag">PHOTO COMING SOON</span>
+           </div>`;
+
+      let socialsHtml = '';
+      const socialButtons = [];
+      if (foundMember.instagram) {
+        socialButtons.push(`
+          <a href="${foundMember.instagram.url}" target="_blank" rel="noopener noreferrer" class="btn-primary modal-action-btn" aria-label="Follow ${foundMember.name} on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="modal-btn-svg" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+            <span>Instagram → ${foundMember.instagram.handle}</span>
+          </a>
+        `);
+      }
+      if (foundMember.linkedin) {
+        socialButtons.push(`
+          <a href="${foundMember.linkedin.url}" target="_blank" rel="noopener noreferrer" class="btn-outline-light modal-action-btn" aria-label="Connect with ${foundMember.name} on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="modal-btn-svg" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+            <span>LinkedIn Profile →</span>
+          </a>
+        `);
+      }
+      if (foundMember.substack) {
+        socialButtons.push(`
+          <div class="modal-substack-info">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="modal-btn-svg" aria-hidden="true">
+              <path d="M4 4h16v3H4zM4 9h16v3H4zM4 14l8 6 8-6v6H4z"/>
+            </svg>
+            <span class="substack-text"><strong>${foundMember.substack.publication}</strong> ${foundMember.substack.handle ? `(${foundMember.substack.handle})` : ''}</span>
+          </div>
+        `);
+      }
+
+      if (socialButtons.length) {
+        socialsHtml = `<div class="modal-socials-container">${socialButtons.join('')}</div>`;
+      }
+
+      modalBody.innerHTML = `
+        <div class="modal-profile-layout">
+          <div class="modal-avatar-column">
+            ${photoHtml}
+          </div>
+          <div class="modal-details-column">
+            <div class="modal-pills-row">
+              <span class="modal-pill modal-dept-pill">${foundMember.department}</span>
+              ${foundMember.age ? `<span class="modal-pill modal-age-pill">${foundMember.age} YEARS OLD</span>` : ''}
+            </div>
+            <h2 id="team-modal-name" class="modal-member-fullname display-headline">${foundMember.name}</h2>
+            ${foundMember.quote ? `
+              <div class="modal-quote-box">
+                <span class="modal-quote-mark" aria-hidden="true">“</span>
+                <blockquote class="modal-quote-content">
+                  <p>${foundMember.quote}</p>
+                </blockquote>
+              </div>
+            ` : ''}
+            ${socialsHtml}
+          </div>
+        </div>
+      `;
+
+      overlay.removeAttribute('hidden');
+      document.body.style.overflow = 'hidden';
+
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          overlay.classList.add('open');
+        });
+      });
+
+      if (closeBtn) setTimeout(() => closeBtn.focus(), 60);
+    }
+
+    function closeModal() {
+      if (!overlay || overlay.hasAttribute('hidden')) return;
+      overlay.classList.remove('open');
+      setTimeout(() => {
+        overlay.setAttribute('hidden', '');
+        document.body.style.overflow = '';
+        if (lastFocusedElement) {
+          lastFocusedElement.focus();
+        }
+      }, 320);
+    }
+
+    const cards = $$('.team-profile-card', $('#team-directory-content'));
+    cards.forEach(card => {
+      const memberId = card.dataset.memberId;
+      card.addEventListener('click', () => openModalForMember(memberId));
+      card.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openModalForMember(memberId);
+        }
+      });
+    });
+
+    if (closeBtn) closeBtn.onclick = closeModal;
+    if (backdrop) backdrop.onclick = closeModal;
+    overlay.onclick = e => {
+      if (e.target === overlay || e.target === backdrop) closeModal();
+    };
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && !overlay.hasAttribute('hidden')) {
+        closeModal();
+      }
+    });
+  }
+
+  function renderEventDetail() {
+    const content = $('#event-detail-content');
+    const eventId = document.body.dataset.eventId;
+    if (!content || !eventId) return;
+    const event = siteData.events.find(item => item.id === eventId) || siteData.events[0];
+    const stats = Object.entries(event.statistics || {}).filter(([, value]) => value !== null && value !== undefined && value !== '');
+    
+    let galleryHtml = '';
+    if (event.gallery && event.gallery.length) {
+      galleryHtml = `
+        <section class="event-gallery" aria-labelledby="event-gallery-heading">
+          <div class="section-label">EVENT GALLERY</div>
+          <h2 id="event-gallery-heading" class="display-headline">PHOTOS FROM THE FIELD</h2>
+          <div class="event-gallery-grid">
+            ${event.gallery.map(img => `
+              <div class="event-gallery-item">
+                <img src="${typeof img === 'string' ? img : img.src}" alt="${typeof img === 'string' ? event.title : (img.caption || event.title)}" loading="lazy" />
+                ${typeof img === 'object' && img.caption ? `<span class="event-gallery-caption">${img.caption}</span>` : ''}
+              </div>
+            `).join('')}
+          </div>
+        </section>
+      `;
+    } else {
+      galleryHtml = `
+        <section class="event-gallery" aria-labelledby="event-gallery-heading">
+          <div class="section-label">EVENT GALLERY</div>
+          <h2 id="event-gallery-heading" class="display-headline">EVENT GALLERY</h2>
+          <p class="event-gallery-placeholder">Photos and additional event documentation will be added here once official event media is provided.</p>
+        </section>
+      `;
+    }
+
+    content.innerHTML = `
+      <div class="section-label">EVENT DETAIL</div>
+      <h1 id="event-detail-title" class="display-headline">${event.title}</h1>
+      <div class="event-meta">
+        <span>📅 ${event.date}</span>
+        ${event.location ? `<span>📍 ${event.location}</span>` : '<span>📍 LOCATION TO BE PROVIDED</span>'}
+        ${event.category ? `<span>🏷️ ${event.category}</span>` : ''}
+      </div>
+      <div class="event-detail-layout">
+        <div class="event-main-image ${event.image ? '' : 'timeline-image-placeholder'}">
+          ${event.image ? `<img src="${event.image}" alt="${event.title}" loading="eager" />` : `<span>EVENT IMAGE<br/>TO BE PROVIDED</span>`}
+        </div>
+        <div class="event-detail-copy">
+          <h2 class="event-copy-heading">ABOUT THE EVENT</h2>
+          <p>${event.description}</p>
+          <div class="event-impact-block">
+            <h2 class="event-impact-title">EVENT IMPACT</h2>
+            ${stats.length ? `
+              <div class="event-stats">
+                ${stats.map(([label, value]) => `
+                  <div class="event-stat-box">
+                    <strong>${value}</strong>
+                    <span>${label}</span>
+                  </div>
+                `).join('')}
+              </div>
+            ` : `
+              <p class="event-pending">Event-specific statistics will be added when verified information is provided.</p>
+            `}
+          </div>
+        </div>
+      </div>
+      ${galleryHtml}
+    `;
+  }
+
+  renderPillars();
+  renderEventTimeline();
+  renderTeamDirectory();
+  renderEventDetail();
+
   /* ─── Smooth scroll (accounts for fixed nav height) ─── */
   function smoothScrollTo(el) {
     if (!el) return;
@@ -114,9 +815,15 @@
     const siteHeader = $('#site-header');
     if (!siteHeader) return;
 
+    const isInnerPage = document.body.classList.contains('inner-page');
+
     /* Sticky background */
     const onScroll = throttle(() => {
-      siteHeader.classList.toggle('scrolled', window.scrollY > 60);
+      if (isInnerPage) {
+        siteHeader.classList.add('scrolled');
+      } else {
+        siteHeader.classList.toggle('scrolled', window.scrollY > 60);
+      }
     }, 80);
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
